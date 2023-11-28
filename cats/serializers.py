@@ -72,7 +72,7 @@ class CatSerializer(serializers.ModelSerializer):
                     achievement=current_achievement, cat=cat
                     )
             return cat
-    
+
     def update(self, instance, validated_data):
         instance.name = validated_data.get('name', instance.name)
         instance.color = validated_data.get('color', instance.color)
